@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Define LSTM Neural Networks
 class LstmRNN(nn.Module):
     """
-        Parameters：
+        Parameters:
         - input_size: feature size
         - hidden_size: number of hidden units
         - output_size: number of output
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     plt.legend(loc='upper right')
 
     # choose dataset for training and testing
-    train_data_ratio = 0.5 # Choose 80% of the data for testing
+    train_data_ratio = 0.5 # Choose 50% of the data for testing
     train_data_len = int(data_len*train_data_ratio)
     train_x = dataset[:train_data_len, 0]
     train_y = dataset[:train_data_len, 1]
